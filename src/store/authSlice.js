@@ -20,5 +20,5 @@ const authSlice = createSlice({
 });
 
 //slice we export in two steps, one is with all the reducers and a full slice
-export const {login,logout} = authSlice.actions;
+export const { login, logout } = authSlice.actions;
 export default authSlice.reducer;
