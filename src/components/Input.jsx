@@ -4,7 +4,7 @@ const Input = React.forwardRef(function Input(
   { label, type = "text", className = "", ...props },
   ref
 ) {
-    const id= useId();
+  const id = useId();
   return (
     <div className="w-full ">
       {label && (
@@ -12,7 +12,13 @@ const Input = React.forwardRef(function Input(
           {label}
         </label>
       )}
-      <input type={type} className={`${className} rounded-lg border w-full`} ref={ref} {...props} id={id}/>
+      <input
+        type={type}
+        className={`${className} rounded-lg border w-full`}
+        ref={ref}
+        {...props}
+        id={id}
+      />
     </div>
   );
 });
